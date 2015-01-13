@@ -15,36 +15,20 @@
 <br>
 <br>
 <br>
-<%= form_for @message,:html=> {:class => 'form-horizontal'}, :url => contact_path do |form| %>
-    <div class="container">
+<div align="center">
+  <h3>Send A message to Us</h3>
 
-<form class="form-inline">
-  <fieldset class="fields">
-
-    <div class="field">
-      <%= form.label :Nafn %>
-      <%= form.text_field :name %>
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
-    
-    <div class="field">
-      <%= form.label :Tölvupóstur %>
-      <%= form.text_field :email %>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
     </div>
-    <div class="field">
-      <%= form.label :Titill %>
-      <%= form.text_field :subject %>
-    </div>
-    
-    <div class="field">
-      <%= form.label :Innihald %>
-      <%= form.text_area :body %>
-    </div>
-  </fieldset>
-  
-  <fieldset class="actions">
-    <%= form.submit "Senda",:class => 'btn-primary' %>
-  </div>
-  </fieldset>
-</form>
-<% end %>
+  <% end %>
+</div>
 </div>
