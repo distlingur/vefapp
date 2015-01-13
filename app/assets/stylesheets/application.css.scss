@@ -21,12 +21,11 @@ header {
 }
 html {
   overflow-y: scroll;
-   height: 100%;
+   height: auto;
 }
 
 body {
- height: 100%;
- zoom: 80%;
+ height: auto;
   padding-top: 60px;
   background-image: url('new.jpg');
 
