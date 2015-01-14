@@ -1,26 +1,39 @@
-<div class="span2">
-	<br>
-	<br> 
-	<br>
-  <p> 
-  	<div class="row">
-  <div class="col-sm-4">
-    <div class="sidebar-nav">
-        <div class="navbar-header">
-          <div class ="sidebar-nav main-selection">
-            <div class = "sidebar-filter-header">
-              <a><%= link_to "Yfirlestur handrita og Prófarka", handrit_path, {:class =>"navbar-brand"} %></a>
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/handrit/index">Prófarkalestur<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+        <li ><a href="/auglysingar/index">Auglýsingatextar<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+        <li ><a href="/timarit/index">Blaða og tímaritsgreinar<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
 
-      <a><%= link_to "Auglýsingatextar", aug_path, {:class =>"navbar-brand"} %></a>
-      <a><%= link_to "Blaða og tímaritsgreinar", timarit_path, {:class =>"navbar-brand"} %></a>
-        	      	<%= image_tag("side.png", :alt => "rss feed") %>
+          </ul>
 
-  </ul>
-</div>
-</div>
-</div>
-</div>
+        </li>
+
+          </ul>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</nav>
+<br><br>
+    
 
 
-  </p>
-</div>
+<div class="sidebar-nav">
+                          <%= image_tag("side.png", :alt => "rss feed", :size => "200x300") %>
+
+    </div>
