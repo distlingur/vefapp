@@ -5,7 +5,6 @@ source 'http://rubygems.org'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
-gem 'sqlite3'
 gem 'sass-rails'
 gem 'sass'
 # Use Uglifier as compressor for JavaScript assets
@@ -42,6 +41,8 @@ group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
 gem 'thin'
+gem 'sqlite3'
+
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
