@@ -154,10 +154,7 @@ border-color: #d6e9c6;
 color: #468847;
 text-align: center;
 }
-.main .row{
-    padding: 0px;
-    margin: 0px;
-  }
+
 
 
   nav.sidebar.navbar {
@@ -171,22 +168,7 @@ text-align: center;
       transition: margin 200ms ease-out;
   }
 
-  .main{
-    padding: 10px 10px 0 10px;
-  }
-
-
-
-    .main{
-      position: absolute;
-      width: calc(100% - 40px); 
-      margin-left: 40px;
-      float: right;
-    }
-
-    nav.sidebar:hover + .main{
-      margin-left: 200px;
-    }
+  
 
     nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
       margin-left: 0px;
@@ -244,18 +226,11 @@ text-align: center;
     nav.sidebar:hover{
       margin-left: 0px;
     }
-    .forAnimate{
-      opacity: 0;
-    }
-  
+   
 
 
 
-    .main{
-      width: calc(100% - 200px);
-      margin-left: 200px;
-    }
-
+   
     nav.sidebar{
       margin-left: 0px;
       float: left;
