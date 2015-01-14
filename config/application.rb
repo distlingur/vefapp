@@ -21,18 +21,8 @@ module VefApp
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.action_mailer.smtp_settings = {
-  :address              => "smtp.gmail.com",
-  :port                 => 587,
-  :domain               => "gmail.com",
-  :user_name            => "distlingur",
-  :password             => "Poseidon1988",
-  :authentication       => :plain,
-  :enable_starttls_auto => true
-}
+    config.assets.initialize_on_precompile = false
 
-config.action_mailer.default_url_options = {
-  :host => "yourdomain.dev"
 }
     config.active_record.raise_in_transactional_callbacks = true
     Bundler.require(:default, Rails.env)
