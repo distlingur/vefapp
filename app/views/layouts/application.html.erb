@@ -3,12 +3,11 @@
   <title>Proförk</title>
   <head>
   <%= stylesheet_link_tag    'application', media: 'all', :"data-turbolinks-track" => true %>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <%= javascript_include_tag 'application', :"data-turbolinks-track" => true %>
 <%= csrf_meta_tags %>
   <link href="/assets/application.css" rel="stylesheet" media="screen">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <div class="container">
 
@@ -42,7 +41,7 @@
   
   <div id="main-container" class="container">
 <div class="row">
-        <div id="sidebar" class="col-xs-2">
+        <div id="sidebar" class="col-xs-3">
             <br>
         <%- if params[:controller] == "base" %>
           <%= render "shared/sidebar" %>
