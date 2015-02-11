@@ -17,11 +17,10 @@
 
 </header>
 
-<nav class="navbar   navbar-inverse " role="navigation">
-    <div class="navbar-collapse collapse">
-
-
-      <a><%= link_to "Heim", root_path, {:class =>"navbar-brand"} %></a>
+<div class="navbar   navbar-inverse " role="navigation">
+    <div class="navbar-inner">
+      
+       <a><%= link_to "Heim", root_path, {:class =>"navbar-brand"} %></a>
 
       <a><%= link_to "Frágangur og skil á verkum", price_path, {:class =>"navbar-brand"} %></a>
 
@@ -30,9 +29,33 @@
       
       <ul class="navbar-right">
            <a><%= link_to "Hafa Samband", contact_path, {:class =>"navbar-brand"} %></a></ul>
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <a class="brand" href="#">Project name</a>
+
+      <!-- This  part is hidden (collapsed) at 940px or less
+           But I want to collapse it at 768px or less!!!!
+      -->
+      <div class="nav-collapse collapse">
+        <a><%= link_to "Heim", root_path, {:class =>"navbar-brand"} %></a>
+
+      <a><%= link_to "Frágangur og skil á verkum", price_path, {:class =>"navbar-brand"} %></a>
+
+      <a><%= link_to "Námsaðstoð í Íslensku", work_path, {:class =>"navbar-brand"} %></a>
+      <a><%= link_to "Bakgrunnur", backround_path, {:class =>"navbar-brand"} %></a>
+      
+      <ul class="navbar-right">
+           <a><%= link_to "Hafa Samband", contact_path, {:class =>"navbar-brand"} %></a></ul>
+           <!-- menu items -->
+      </div>
+
     </div>
   </div>
-</nav>
+</div>
 </header>
 
 

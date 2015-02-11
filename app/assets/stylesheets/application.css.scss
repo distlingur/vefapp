@@ -29,19 +29,14 @@
   @media only screen and (min-width : 1200px) {
 
   }
-.navbar .nav > a {
-	  
-      padding:15px 50px 15px;
-  background-repeat: repeat-x;
-  width: 100%;
 
 
 
-}
+
 a{
   color: black;
 }
-header > navbar {
+header {
 
         background-image: url('mynd.jpg');
 
@@ -74,42 +69,13 @@ textarea {
   text-align: center;
 }
 
-.center h1 {
-
-  margin-bottom: 10px;
-}
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 2em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: left;
-  font-weight: normal;
-  color: #777;
-}
-
 p {
-  font-size: 1.3em;
-font-family: 'Tangerine', serif;
-  line-height: 1.7em;
-}
-ul{
-  font-size: 1.3em;
-
-  line-height: 1.7em;
+    font-size: 1.2em;
 
 
 }
+
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -187,86 +153,4 @@ text-align: center;
 
 
 
-  nav.sidebar.navbar {
-    border-radius: 0px;
-  }
-
-
-
   
-
-    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-      margin-left: 0px;
-    }
-    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
-      text-align: center;
-      width: 100%;
-      margin-left: 0px;
-    }
-
-    nav.sidebar a{
-      padding-right: 13px;
-    }
-
-    nav.sidebar .navbar-nav > li:first-child{
-      border-top: 1px #e5e5e5 solid;
-    }
-
-    nav.sidebar .navbar-nav > li{
-      border-bottom: 1px #e5e5e5 solid;
-    }
-
-    nav.sidebar .navbar-nav .open .dropdown-menu {
-      position: static;
-      float: none;
-      width: auto;
-      margin-top: 0;
-      background-color: transparent;
-      border: 0;
-      box-shadow: none;
-    }
-
-    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-      padding: 0 0px 0 0px;
-    }
-    
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-      color: #777;
-    }
-
-    nav.sidebar{
-      width: 200px;
-      height: 100%;
-      margin-left: -160px;
-      float: left;
-      z-index: 8000;
-      margin-bottom: 0px;
-    }
-
-    nav.sidebar li {
-      width: 100%;
-    }
-
-    nav.sidebar:hover{
-      margin-left: 0px;
-    }
-   
-
-
-
-   
-    nav.sidebar{
-      margin-left: 0px;
-      float: left;
-    }
-
-
-  nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
-    color: #CCC;
-    background-color: transparent;
-  }
-
-
-  section{
-    padding-left: 15px;
-  }
