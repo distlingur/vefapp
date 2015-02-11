@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
   <title>Proförk</title>
+  <head>
   <%= stylesheet_link_tag    'application', media: 'all', :"data-turbolinks-track" => true %>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <%= javascript_include_tag 'application', :"data-turbolinks-track" => true %>
 <%= csrf_meta_tags %>
   <link href="/assets/application.css" rel="stylesheet" media="screen">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <div class="container">
 
-<header class="navbar navbar-fixed-top navbar-inverse">
-<br>
-
+<header>
+  <header class="navbar navbar">
 <%= link_to "AH Próförk", root_path,id: "logo" %></a>
 
+</header>
 
-  </header>
+<nav class="navbar   navbar-inverse " role="navigation">
+    <div class="navbar-collapse collapse">
 
-<nav class="navbar navbar-inverse">
 
-  <div class="container-fluid">
-    <div class="navbar-header" style='position:fixed'>
-    </div>
-    <div>
-       <ul class="nav navbar-nav navbar-left">
-
-       <a><%= link_to "Heim", root_path, {:class =>"navbar-brand"} %></a>
+      <a><%= link_to "Heim", root_path, {:class =>"navbar-brand"} %></a>
 
       <a><%= link_to "Frágangur og skil á verkum", price_path, {:class =>"navbar-brand"} %></a>
 
       <a><%= link_to "Námsaðstoð í Íslensku", work_path, {:class =>"navbar-brand"} %></a>
       <a><%= link_to "Bakgrunnur", backround_path, {:class =>"navbar-brand"} %></a>
       
-       </ul>
-       <ul class="nav navbar-nav navbar-right">
-           <a><%= link_to "Hafa Samband", contact_path, {:class =>"navbar-brand"} %></a>
+      <ul class="navbar-right">
+           <a><%= link_to "Hafa Samband", contact_path, {:class =>"navbar-brand"} %></a></ul>
     </div>
   </div>
 </nav>
-</head>
-<body>
+</header>
 
-<div class="row-fluid">
-       <div class="span4" style='position:fixed'>
-       	<br>
-       	<br>
+
+
+<body>
+  
+  <div id="main-container" class="container">
+<div class="row">
+        <div id="sidebar" class="col-xs-2">
+            <br>
         <%- if params[:controller] == "base" %>
           <%= render "shared/sidebar" %>
         <%end%>
@@ -66,26 +68,25 @@
         <%- if params[:controller] == "contact" %>
           <%= render "shared/sidebar" %>
         <%end%>
-       </div>
-       <div class='span9'>
-                <!-- content of page -->
-       </div>
+          <!-- sidebar content -->
+        </div>
+
+        <div id="content" class="col-md-8">
+          <%= yield %>
+
+          <!--  main content -->
+        </div>
+      </div>
     </div>
+
+
+
+
+
+
 </div>
-
-
-
-
-<div id="page-content-wrapper">
-        <div class="page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-<%= yield %>
-</div>
-</div></div></div></div>
   <%= render 'layouts/footer' %>
-</div>
+
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 
 @import "bootstrap";
+
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
@@ -9,6 +10,7 @@
 	  
       padding:15px 50px 15px;
   background-repeat: repeat-x;
+  width: 100%;
 
 
 
@@ -16,10 +18,12 @@
 a{
   color: black;
 }
-header {
+header > navbar {
+
         background-image: url('mynd.jpg');
 
 }
+
 html {
   overflow-y: scroll;
    height: auto;
@@ -56,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -202,7 +206,7 @@ text-align: center;
     nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
       padding: 0 0px 0 0px;
     }
-
+    
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
       color: #777;
     }
