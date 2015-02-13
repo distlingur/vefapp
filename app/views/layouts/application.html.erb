@@ -27,15 +27,14 @@
       </a>
 
       <div class="nav-collapse">
-        <ul class="navbar-left">
+        <ul class="navbar-center">
         <a><%= link_to "Heim", root_path, {:class =>"navbar-brand"} %></a>
 
       <a><%= link_to "Frágangur og skil á verkum", price_path, {:class =>"navbar-brand"} %></a>
 
       <a><%= link_to "Námsaðstoð í Íslensku", work_path, {:class =>"navbar-brand"} %></a>
       <a><%= link_to "Bakgrunnur", backround_path, {:class =>"navbar-brand"} %></a>
-      </ul>
-      <ul class="navbar-right">
+      
            <a><%= link_to "Hafa Samband", contact_path, {:class =>"navbar-brand"} %></a></ul>          
         
       </div>
@@ -56,7 +55,7 @@
   
   <div id="main-container" class="container">
 <div class="row">
-        <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+        <div id="sidebar" class="col-sm-2 ">
             <br>
         <%- if params[:controller] == "base" %>
           <%= render "shared/sidebar" %>

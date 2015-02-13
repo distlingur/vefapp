@@ -1,5 +1,4 @@
 <br>
-<br>
 <div class="main">
 
 <div class="container-fluid ">
@@ -12,16 +11,17 @@
 </div>
 <br>
 <br>
-<br>
 
 
 <div align="center">
   <h3>Fylla út </h3>
+  <br>
+</div>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' }, :url => contact_path do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
+    <%= f.input :name, label: 'Nafn', :required => false %>
+    <%= f.input :email, label: 'Netfang', :required => false %>
+    <%= f.input :message, label: 'Innihald', :as => :text, :required => false %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
